@@ -84,6 +84,11 @@ class ProtocolSchema(db.Model):
 
     schema = db.Column(db.JSON, nullable=False)
 
+    def toJSON(self,full=None):
+        dictionary= {'uuid': self.uuid, 'name': self.name, 'description': self.description, 'schema':self.schema}
+        if full=='full':
+            pass
+        return dictionary
 
 
 protocol_schema = {
