@@ -1,0 +1,2354 @@
+{
+    "default-values": {
+      "aspirate-flow-rate": {
+        "p1000_single": 500,
+        "p10_multi": 5,
+        "p10_single": 5,
+        "p300_multi": 150,
+        "p300_single": 150,
+        "p50_multi": 25,
+        "p50_single": 25
+      },
+      "aspirate-mm-from-bottom": 1,
+      "dispense-flow-rate": {
+        "p1000_single": 1000,
+        "p10_multi": 10,
+        "p10_single": 10,
+        "p300_multi": 300,
+        "p300_single": 300,
+        "p50_multi": 50,
+        "p50_single": 50
+      },
+      "dispense-mm-from-bottom": 0.5,
+      "touch-tip-mm-from-top": -1
+    },
+    "labware": {
+      "0a339ed4-76a3-4aea-bbfd-ebc7abe9b545": {
+        "model": "96-flat",
+        "name": "FG_JCVISYN3-distro-3",
+        "slot": "9"
+      },
+      "11_tip_box": {
+        "model": "opentrons-tiprack-300ul",
+        "name": "11_tip_box",
+        "slot": "11"
+      },
+      "152e2600-85e0-41a8-ae76-fd82b7619efd": {
+        "model": "96-flat",
+        "name": "FG_JCVISYN3-distro-3",
+        "slot": "1"
+      },
+      "2a736251-143d-432b-a4a7-537db49601b7": {
+        "model": "96-flat",
+        "name": "FG_JCVISYN3-distro-3",
+        "slot": "3"
+      },
+      "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61": {
+        "model": "96-deep-well",
+        "name": "FG_JCVISYN3-distro-3",
+        "slot": "10"
+      },
+      "3a6df528-370a-4eb8-be3d-d02b3a4de370": {
+        "model": "96-flat",
+        "name": "FG_JCVISYN3-distro-3",
+        "slot": "8"
+      },
+      "3a86a4cc-1c99-499a-bc7b-6d8e0739274f": {
+        "model": "96-flat",
+        "name": "FG_JCVISYN3-distro-3",
+        "slot": "4"
+      },
+      "77c39f26-9300-49fa-8dc2-c2dd044a02ca": {
+        "model": "96-flat",
+        "name": "FG_JCVISYN3-distro-3",
+        "slot": "6"
+      },
+      "ea52ab9d-2afc-48a4-8a59-e9e5cb897128": {
+        "model": "96-flat",
+        "name": "FG_JCVISYN3-distro-3",
+        "slot": "7"
+      },
+      "ee4bae45-ca7f-4b31-b6e1-b8cadf0e5e53": {
+        "model": "96-flat",
+        "name": "FG_JCVISYN3-distro-3",
+        "slot": "2"
+      },
+      "fb1a326c-550c-4b19-9b38-a639f63a3ca1": {
+        "model": "96-flat",
+        "name": "FG_JCVISYN3-distro-3",
+        "slot": "5"
+      },
+      "trash_yo": {
+        "model": "fixed-trash",
+        "name": "Trash yo",
+        "slot": "12"
+      }
+    },
+    "metadata": {
+      "author": "Keoni Gandall",
+      "datetime": "2019-06-06 08:51:58.015928",
+      "protocolName": "9 96"
+    },
+    "pipettes": {
+      "32762f55-3e0c-4df7-9bad-7d06f12e1cbd": {
+        "model": "p50_multi_v1.3",
+        "mount": "left",
+        "name": "p50_multi",
+        "type": "pipette"
+      }
+    },
+    "procedure": [
+      {
+        "subprocedure": [
+          {
+            "command": "pick-up-tip",
+            "params": {
+              "labware": "11_tip_box",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "well": "A1"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 5,
+              "well": "A1"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A1"
+            }
+          },
+          {
+            "command": "dispense",
+            "params": {
+              "labware": "152e2600-85e0-41a8-ae76-fd82b7619efd",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A1"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A1"
+            }
+          },
+          {
+            "command": "dispense",
+            "params": {
+              "labware": "ee4bae45-ca7f-4b31-b6e1-b8cadf0e5e53",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A1"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A1"
+            }
+          },
+          {
+            "command": "dispense",
+            "params": {
+              "labware": "2a736251-143d-432b-a4a7-537db49601b7",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A1"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A1"
+            }
+          },
+          {
+            "command": "dispense",
+            "params": {
+              "labware": "3a86a4cc-1c99-499a-bc7b-6d8e0739274f",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A1"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A1"
+            }
+          },
+          {
+            "command": "dispense",
+            "params": {
+              "labware": "fb1a326c-550c-4b19-9b38-a639f63a3ca1",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A1"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A1"
+            }
+          },
+          {
+            "command": "dispense",
+            "params": {
+              "labware": "77c39f26-9300-49fa-8dc2-c2dd044a02ca",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A1"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A1"
+            }
+          },
+          {
+            "command": "dispense",
+            "params": {
+              "labware": "ea52ab9d-2afc-48a4-8a59-e9e5cb897128",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A1"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A1"
+            }
+          },
+          {
+            "command": "dispense",
+            "params": {
+              "labware": "3a6df528-370a-4eb8-be3d-d02b3a4de370",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A1"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A1"
+            }
+          },
+          {
+            "command": "dispense",
+            "params": {
+              "labware": "0a339ed4-76a3-4aea-bbfd-ebc7abe9b545",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A1"
+            }
+          },
+          {
+            "command": "drop-tip",
+            "params": {
+              "labware": "trash_yo",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "well": "A1"
+            }
+          },
+          {
+            "command": "pick-up-tip",
+            "params": {
+              "labware": "11_tip_box",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "well": "A2"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 5,
+              "well": "A2"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A2"
+            }
+          },
+          {
+            "command": "dispense",
+            "params": {
+              "labware": "152e2600-85e0-41a8-ae76-fd82b7619efd",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A2"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A2"
+            }
+          },
+          {
+            "command": "dispense",
+            "params": {
+              "labware": "ee4bae45-ca7f-4b31-b6e1-b8cadf0e5e53",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A2"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A2"
+            }
+          },
+          {
+            "command": "dispense",
+            "params": {
+              "labware": "2a736251-143d-432b-a4a7-537db49601b7",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A2"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A2"
+            }
+          },
+          {
+            "command": "dispense",
+            "params": {
+              "labware": "3a86a4cc-1c99-499a-bc7b-6d8e0739274f",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A2"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A2"
+            }
+          },
+          {
+            "command": "dispense",
+            "params": {
+              "labware": "fb1a326c-550c-4b19-9b38-a639f63a3ca1",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A2"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A2"
+            }
+          },
+          {
+            "command": "dispense",
+            "params": {
+              "labware": "77c39f26-9300-49fa-8dc2-c2dd044a02ca",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A2"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A2"
+            }
+          },
+          {
+            "command": "dispense",
+            "params": {
+              "labware": "ea52ab9d-2afc-48a4-8a59-e9e5cb897128",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A2"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A2"
+            }
+          },
+          {
+            "command": "dispense",
+            "params": {
+              "labware": "3a6df528-370a-4eb8-be3d-d02b3a4de370",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A2"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A2"
+            }
+          },
+          {
+            "command": "dispense",
+            "params": {
+              "labware": "0a339ed4-76a3-4aea-bbfd-ebc7abe9b545",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A2"
+            }
+          },
+          {
+            "command": "drop-tip",
+            "params": {
+              "labware": "trash_yo",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "well": "A1"
+            }
+          },
+          {
+            "command": "pick-up-tip",
+            "params": {
+              "labware": "11_tip_box",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "well": "A3"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 5,
+              "well": "A3"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A3"
+            }
+          },
+          {
+            "command": "dispense",
+            "params": {
+              "labware": "152e2600-85e0-41a8-ae76-fd82b7619efd",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A3"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A3"
+            }
+          },
+          {
+            "command": "dispense",
+            "params": {
+              "labware": "ee4bae45-ca7f-4b31-b6e1-b8cadf0e5e53",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A3"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A3"
+            }
+          },
+          {
+            "command": "dispense",
+            "params": {
+              "labware": "2a736251-143d-432b-a4a7-537db49601b7",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A3"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A3"
+            }
+          },
+          {
+            "command": "dispense",
+            "params": {
+              "labware": "3a86a4cc-1c99-499a-bc7b-6d8e0739274f",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A3"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A3"
+            }
+          },
+          {
+            "command": "dispense",
+            "params": {
+              "labware": "fb1a326c-550c-4b19-9b38-a639f63a3ca1",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A3"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A3"
+            }
+          },
+          {
+            "command": "dispense",
+            "params": {
+              "labware": "77c39f26-9300-49fa-8dc2-c2dd044a02ca",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A3"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A3"
+            }
+          },
+          {
+            "command": "dispense",
+            "params": {
+              "labware": "ea52ab9d-2afc-48a4-8a59-e9e5cb897128",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A3"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A3"
+            }
+          },
+          {
+            "command": "dispense",
+            "params": {
+              "labware": "3a6df528-370a-4eb8-be3d-d02b3a4de370",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A3"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A3"
+            }
+          },
+          {
+            "command": "dispense",
+            "params": {
+              "labware": "0a339ed4-76a3-4aea-bbfd-ebc7abe9b545",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A3"
+            }
+          },
+          {
+            "command": "drop-tip",
+            "params": {
+              "labware": "trash_yo",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "well": "A1"
+            }
+          },
+          {
+            "command": "pick-up-tip",
+            "params": {
+              "labware": "11_tip_box",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "well": "A4"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 5,
+              "well": "A4"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A4"
+            }
+          },
+          {
+            "command": "dispense",
+            "params": {
+              "labware": "152e2600-85e0-41a8-ae76-fd82b7619efd",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A4"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A4"
+            }
+          },
+          {
+            "command": "dispense",
+            "params": {
+              "labware": "ee4bae45-ca7f-4b31-b6e1-b8cadf0e5e53",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A4"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A4"
+            }
+          },
+          {
+            "command": "dispense",
+            "params": {
+              "labware": "2a736251-143d-432b-a4a7-537db49601b7",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A4"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A4"
+            }
+          },
+          {
+            "command": "dispense",
+            "params": {
+              "labware": "3a86a4cc-1c99-499a-bc7b-6d8e0739274f",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A4"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A4"
+            }
+          },
+          {
+            "command": "dispense",
+            "params": {
+              "labware": "fb1a326c-550c-4b19-9b38-a639f63a3ca1",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A4"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A4"
+            }
+          },
+          {
+            "command": "dispense",
+            "params": {
+              "labware": "77c39f26-9300-49fa-8dc2-c2dd044a02ca",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A4"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A4"
+            }
+          },
+          {
+            "command": "dispense",
+            "params": {
+              "labware": "ea52ab9d-2afc-48a4-8a59-e9e5cb897128",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A4"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A4"
+            }
+          },
+          {
+            "command": "dispense",
+            "params": {
+              "labware": "3a6df528-370a-4eb8-be3d-d02b3a4de370",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A4"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A4"
+            }
+          },
+          {
+            "command": "dispense",
+            "params": {
+              "labware": "0a339ed4-76a3-4aea-bbfd-ebc7abe9b545",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A4"
+            }
+          },
+          {
+            "command": "drop-tip",
+            "params": {
+              "labware": "trash_yo",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "well": "A1"
+            }
+          },
+          {
+            "command": "pick-up-tip",
+            "params": {
+              "labware": "11_tip_box",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "well": "A5"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 5,
+              "well": "A5"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A5"
+            }
+          },
+          {
+            "command": "dispense",
+            "params": {
+              "labware": "152e2600-85e0-41a8-ae76-fd82b7619efd",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A5"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A5"
+            }
+          },
+          {
+            "command": "dispense",
+            "params": {
+              "labware": "ee4bae45-ca7f-4b31-b6e1-b8cadf0e5e53",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A5"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A5"
+            }
+          },
+          {
+            "command": "dispense",
+            "params": {
+              "labware": "2a736251-143d-432b-a4a7-537db49601b7",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A5"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A5"
+            }
+          },
+          {
+            "command": "dispense",
+            "params": {
+              "labware": "3a86a4cc-1c99-499a-bc7b-6d8e0739274f",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A5"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A5"
+            }
+          },
+          {
+            "command": "dispense",
+            "params": {
+              "labware": "fb1a326c-550c-4b19-9b38-a639f63a3ca1",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A5"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A5"
+            }
+          },
+          {
+            "command": "dispense",
+            "params": {
+              "labware": "77c39f26-9300-49fa-8dc2-c2dd044a02ca",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A5"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A5"
+            }
+          },
+          {
+            "command": "dispense",
+            "params": {
+              "labware": "ea52ab9d-2afc-48a4-8a59-e9e5cb897128",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A5"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A5"
+            }
+          },
+          {
+            "command": "dispense",
+            "params": {
+              "labware": "3a6df528-370a-4eb8-be3d-d02b3a4de370",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A5"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A5"
+            }
+          },
+          {
+            "command": "dispense",
+            "params": {
+              "labware": "0a339ed4-76a3-4aea-bbfd-ebc7abe9b545",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A5"
+            }
+          },
+          {
+            "command": "drop-tip",
+            "params": {
+              "labware": "trash_yo",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "well": "A1"
+            }
+          },
+          {
+            "command": "pick-up-tip",
+            "params": {
+              "labware": "11_tip_box",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "well": "A6"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 5,
+              "well": "A6"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A6"
+            }
+          },
+          {
+            "command": "dispense",
+            "params": {
+              "labware": "152e2600-85e0-41a8-ae76-fd82b7619efd",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A6"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A6"
+            }
+          },
+          {
+            "command": "dispense",
+            "params": {
+              "labware": "ee4bae45-ca7f-4b31-b6e1-b8cadf0e5e53",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A6"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A6"
+            }
+          },
+          {
+            "command": "dispense",
+            "params": {
+              "labware": "2a736251-143d-432b-a4a7-537db49601b7",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A6"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A6"
+            }
+          },
+          {
+            "command": "dispense",
+            "params": {
+              "labware": "3a86a4cc-1c99-499a-bc7b-6d8e0739274f",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A6"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A6"
+            }
+          },
+          {
+            "command": "dispense",
+            "params": {
+              "labware": "fb1a326c-550c-4b19-9b38-a639f63a3ca1",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A6"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A6"
+            }
+          },
+          {
+            "command": "dispense",
+            "params": {
+              "labware": "77c39f26-9300-49fa-8dc2-c2dd044a02ca",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A6"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A6"
+            }
+          },
+          {
+            "command": "dispense",
+            "params": {
+              "labware": "ea52ab9d-2afc-48a4-8a59-e9e5cb897128",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A6"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A6"
+            }
+          },
+          {
+            "command": "dispense",
+            "params": {
+              "labware": "3a6df528-370a-4eb8-be3d-d02b3a4de370",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A6"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A6"
+            }
+          },
+          {
+            "command": "dispense",
+            "params": {
+              "labware": "0a339ed4-76a3-4aea-bbfd-ebc7abe9b545",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A6"
+            }
+          },
+          {
+            "command": "drop-tip",
+            "params": {
+              "labware": "trash_yo",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "well": "A1"
+            }
+          },
+          {
+            "command": "pick-up-tip",
+            "params": {
+              "labware": "11_tip_box",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "well": "A7"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 5,
+              "well": "A7"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A7"
+            }
+          },
+          {
+            "command": "dispense",
+            "params": {
+              "labware": "152e2600-85e0-41a8-ae76-fd82b7619efd",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A7"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A7"
+            }
+          },
+          {
+            "command": "dispense",
+            "params": {
+              "labware": "ee4bae45-ca7f-4b31-b6e1-b8cadf0e5e53",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A7"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A7"
+            }
+          },
+          {
+            "command": "dispense",
+            "params": {
+              "labware": "2a736251-143d-432b-a4a7-537db49601b7",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A7"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A7"
+            }
+          },
+          {
+            "command": "dispense",
+            "params": {
+              "labware": "3a86a4cc-1c99-499a-bc7b-6d8e0739274f",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A7"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A7"
+            }
+          },
+          {
+            "command": "dispense",
+            "params": {
+              "labware": "fb1a326c-550c-4b19-9b38-a639f63a3ca1",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A7"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A7"
+            }
+          },
+          {
+            "command": "dispense",
+            "params": {
+              "labware": "77c39f26-9300-49fa-8dc2-c2dd044a02ca",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A7"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A7"
+            }
+          },
+          {
+            "command": "dispense",
+            "params": {
+              "labware": "ea52ab9d-2afc-48a4-8a59-e9e5cb897128",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A7"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A7"
+            }
+          },
+          {
+            "command": "dispense",
+            "params": {
+              "labware": "3a6df528-370a-4eb8-be3d-d02b3a4de370",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A7"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A7"
+            }
+          },
+          {
+            "command": "dispense",
+            "params": {
+              "labware": "0a339ed4-76a3-4aea-bbfd-ebc7abe9b545",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A7"
+            }
+          },
+          {
+            "command": "drop-tip",
+            "params": {
+              "labware": "trash_yo",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "well": "A1"
+            }
+          },
+          {
+            "command": "pick-up-tip",
+            "params": {
+              "labware": "11_tip_box",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "well": "A8"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 5,
+              "well": "A8"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A8"
+            }
+          },
+          {
+            "command": "dispense",
+            "params": {
+              "labware": "152e2600-85e0-41a8-ae76-fd82b7619efd",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A8"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A8"
+            }
+          },
+          {
+            "command": "dispense",
+            "params": {
+              "labware": "ee4bae45-ca7f-4b31-b6e1-b8cadf0e5e53",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A8"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A8"
+            }
+          },
+          {
+            "command": "dispense",
+            "params": {
+              "labware": "2a736251-143d-432b-a4a7-537db49601b7",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A8"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A8"
+            }
+          },
+          {
+            "command": "dispense",
+            "params": {
+              "labware": "3a86a4cc-1c99-499a-bc7b-6d8e0739274f",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A8"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A8"
+            }
+          },
+          {
+            "command": "dispense",
+            "params": {
+              "labware": "fb1a326c-550c-4b19-9b38-a639f63a3ca1",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A8"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A8"
+            }
+          },
+          {
+            "command": "dispense",
+            "params": {
+              "labware": "77c39f26-9300-49fa-8dc2-c2dd044a02ca",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A8"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A8"
+            }
+          },
+          {
+            "command": "dispense",
+            "params": {
+              "labware": "ea52ab9d-2afc-48a4-8a59-e9e5cb897128",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A8"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A8"
+            }
+          },
+          {
+            "command": "dispense",
+            "params": {
+              "labware": "3a6df528-370a-4eb8-be3d-d02b3a4de370",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A8"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A8"
+            }
+          },
+          {
+            "command": "dispense",
+            "params": {
+              "labware": "0a339ed4-76a3-4aea-bbfd-ebc7abe9b545",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A8"
+            }
+          },
+          {
+            "command": "drop-tip",
+            "params": {
+              "labware": "trash_yo",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "well": "A1"
+            }
+          },
+          {
+            "command": "pick-up-tip",
+            "params": {
+              "labware": "11_tip_box",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "well": "A9"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 5,
+              "well": "A9"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A9"
+            }
+          },
+          {
+            "command": "dispense",
+            "params": {
+              "labware": "152e2600-85e0-41a8-ae76-fd82b7619efd",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A9"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A9"
+            }
+          },
+          {
+            "command": "dispense",
+            "params": {
+              "labware": "ee4bae45-ca7f-4b31-b6e1-b8cadf0e5e53",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A9"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A9"
+            }
+          },
+          {
+            "command": "dispense",
+            "params": {
+              "labware": "2a736251-143d-432b-a4a7-537db49601b7",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A9"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A9"
+            }
+          },
+          {
+            "command": "dispense",
+            "params": {
+              "labware": "3a86a4cc-1c99-499a-bc7b-6d8e0739274f",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A9"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A9"
+            }
+          },
+          {
+            "command": "dispense",
+            "params": {
+              "labware": "fb1a326c-550c-4b19-9b38-a639f63a3ca1",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A9"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A9"
+            }
+          },
+          {
+            "command": "dispense",
+            "params": {
+              "labware": "77c39f26-9300-49fa-8dc2-c2dd044a02ca",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A9"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A9"
+            }
+          },
+          {
+            "command": "dispense",
+            "params": {
+              "labware": "ea52ab9d-2afc-48a4-8a59-e9e5cb897128",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A9"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A9"
+            }
+          },
+          {
+            "command": "dispense",
+            "params": {
+              "labware": "3a6df528-370a-4eb8-be3d-d02b3a4de370",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A9"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A9"
+            }
+          },
+          {
+            "command": "dispense",
+            "params": {
+              "labware": "0a339ed4-76a3-4aea-bbfd-ebc7abe9b545",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A9"
+            }
+          },
+          {
+            "command": "drop-tip",
+            "params": {
+              "labware": "trash_yo",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "well": "A1"
+            }
+          },
+          {
+            "command": "pick-up-tip",
+            "params": {
+              "labware": "11_tip_box",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "well": "A10"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 5,
+              "well": "A10"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A10"
+            }
+          },
+          {
+            "command": "dispense",
+            "params": {
+              "labware": "152e2600-85e0-41a8-ae76-fd82b7619efd",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A10"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A10"
+            }
+          },
+          {
+            "command": "dispense",
+            "params": {
+              "labware": "ee4bae45-ca7f-4b31-b6e1-b8cadf0e5e53",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A10"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A10"
+            }
+          },
+          {
+            "command": "dispense",
+            "params": {
+              "labware": "2a736251-143d-432b-a4a7-537db49601b7",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A10"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A10"
+            }
+          },
+          {
+            "command": "dispense",
+            "params": {
+              "labware": "3a86a4cc-1c99-499a-bc7b-6d8e0739274f",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A10"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A10"
+            }
+          },
+          {
+            "command": "dispense",
+            "params": {
+              "labware": "fb1a326c-550c-4b19-9b38-a639f63a3ca1",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A10"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A10"
+            }
+          },
+          {
+            "command": "dispense",
+            "params": {
+              "labware": "77c39f26-9300-49fa-8dc2-c2dd044a02ca",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A10"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A10"
+            }
+          },
+          {
+            "command": "dispense",
+            "params": {
+              "labware": "ea52ab9d-2afc-48a4-8a59-e9e5cb897128",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A10"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A10"
+            }
+          },
+          {
+            "command": "dispense",
+            "params": {
+              "labware": "3a6df528-370a-4eb8-be3d-d02b3a4de370",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A10"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A10"
+            }
+          },
+          {
+            "command": "dispense",
+            "params": {
+              "labware": "0a339ed4-76a3-4aea-bbfd-ebc7abe9b545",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A10"
+            }
+          },
+          {
+            "command": "drop-tip",
+            "params": {
+              "labware": "trash_yo",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "well": "A1"
+            }
+          },
+          {
+            "command": "pick-up-tip",
+            "params": {
+              "labware": "11_tip_box",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "well": "A11"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 5,
+              "well": "A11"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A11"
+            }
+          },
+          {
+            "command": "dispense",
+            "params": {
+              "labware": "152e2600-85e0-41a8-ae76-fd82b7619efd",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A11"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A11"
+            }
+          },
+          {
+            "command": "dispense",
+            "params": {
+              "labware": "ee4bae45-ca7f-4b31-b6e1-b8cadf0e5e53",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A11"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A11"
+            }
+          },
+          {
+            "command": "dispense",
+            "params": {
+              "labware": "2a736251-143d-432b-a4a7-537db49601b7",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A11"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A11"
+            }
+          },
+          {
+            "command": "dispense",
+            "params": {
+              "labware": "3a86a4cc-1c99-499a-bc7b-6d8e0739274f",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A11"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A11"
+            }
+          },
+          {
+            "command": "dispense",
+            "params": {
+              "labware": "fb1a326c-550c-4b19-9b38-a639f63a3ca1",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A11"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A11"
+            }
+          },
+          {
+            "command": "dispense",
+            "params": {
+              "labware": "77c39f26-9300-49fa-8dc2-c2dd044a02ca",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A11"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A11"
+            }
+          },
+          {
+            "command": "dispense",
+            "params": {
+              "labware": "ea52ab9d-2afc-48a4-8a59-e9e5cb897128",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A11"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A11"
+            }
+          },
+          {
+            "command": "dispense",
+            "params": {
+              "labware": "3a6df528-370a-4eb8-be3d-d02b3a4de370",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A11"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A11"
+            }
+          },
+          {
+            "command": "dispense",
+            "params": {
+              "labware": "0a339ed4-76a3-4aea-bbfd-ebc7abe9b545",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A11"
+            }
+          },
+          {
+            "command": "drop-tip",
+            "params": {
+              "labware": "trash_yo",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "well": "A1"
+            }
+          },
+          {
+            "command": "pick-up-tip",
+            "params": {
+              "labware": "11_tip_box",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "well": "A12"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 5,
+              "well": "A12"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A12"
+            }
+          },
+          {
+            "command": "dispense",
+            "params": {
+              "labware": "152e2600-85e0-41a8-ae76-fd82b7619efd",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A12"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A12"
+            }
+          },
+          {
+            "command": "dispense",
+            "params": {
+              "labware": "ee4bae45-ca7f-4b31-b6e1-b8cadf0e5e53",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A12"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A12"
+            }
+          },
+          {
+            "command": "dispense",
+            "params": {
+              "labware": "2a736251-143d-432b-a4a7-537db49601b7",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A12"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A12"
+            }
+          },
+          {
+            "command": "dispense",
+            "params": {
+              "labware": "3a86a4cc-1c99-499a-bc7b-6d8e0739274f",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A12"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A12"
+            }
+          },
+          {
+            "command": "dispense",
+            "params": {
+              "labware": "fb1a326c-550c-4b19-9b38-a639f63a3ca1",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A12"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A12"
+            }
+          },
+          {
+            "command": "dispense",
+            "params": {
+              "labware": "77c39f26-9300-49fa-8dc2-c2dd044a02ca",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A12"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A12"
+            }
+          },
+          {
+            "command": "dispense",
+            "params": {
+              "labware": "ea52ab9d-2afc-48a4-8a59-e9e5cb897128",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A12"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A12"
+            }
+          },
+          {
+            "command": "dispense",
+            "params": {
+              "labware": "3a6df528-370a-4eb8-be3d-d02b3a4de370",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A12"
+            }
+          },
+          {
+            "command": "aspirate",
+            "params": {
+              "labware": "2b1901b0-7fd0-4991-a9f6-c98d4ea19c61",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A12"
+            }
+          },
+          {
+            "command": "dispense",
+            "params": {
+              "labware": "0a339ed4-76a3-4aea-bbfd-ebc7abe9b545",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "volume": 45,
+              "well": "A12"
+            }
+          },
+          {
+            "command": "drop-tip",
+            "params": {
+              "labware": "trash_yo",
+              "pipette": "32762f55-3e0c-4df7-9bad-7d06f12e1cbd",
+              "well": "A1"
+            }
+          }
+        ]
+      }
+    ],
+    "protocol-schema": "1.0.0",
+    "robot": {
+      "model": "OT-2 Standard"
+    }
+}
