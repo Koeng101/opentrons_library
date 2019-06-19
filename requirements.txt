@@ -17,4 +17,3 @@ gunicorn
 cryptography
 pyjwt
 
-shippo_fixed
