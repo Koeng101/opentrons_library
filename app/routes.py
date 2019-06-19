@@ -78,7 +78,7 @@ def crud_get_list(cls,full=None):
 def crud_post(cls,post,database):
     obj = request_to_class(cls(),post)
     if cls == Protocol:
-        protocol_schema = ProtocolSchema.query.filter_by(uuid=request_to_class()['protocolschema']).first()
+        protocol_schema = ProtocolSchema.query.filter_by(uuid=request.get_json()['protocolschema']).first()
         try:
             validate(instance=request.get_json()['protocol'],schema=protocol_schema.schema)
         except Exception as e:
