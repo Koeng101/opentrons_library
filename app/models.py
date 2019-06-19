@@ -116,7 +116,7 @@ class Protocol(db.Model):
     tags = db.relationship('Tag', secondary=tags_protocols, lazy='subquery',
         backref=db.backref('protocols', lazy=True))
     def toJSON(self,full=None):
-        dictionary= {'uuid': self.uuid, 'description': self.description, 'protocol': self.protocol, 'protocolschema': protocolschema, 'tags':[tag.tag for tag in self.tags]}
+        dictionary= {'uuid': self.uuid, 'description': self.description, 'protocol': self.protocol, 'protocolschema': self.protocolschema, 'tags':[tag.tag for tag in self.tags]}
         if full=='full':
             pass
         return dictionary
